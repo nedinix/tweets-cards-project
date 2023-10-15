@@ -2,6 +2,11 @@ import { styled } from 'styled-components';
 
 export const ListWrapper = styled.ul`
   max-width: 1300px;
+
+  @media screen and (max-width: 440px) {
+    max-width: 100%;
+  }
+
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
