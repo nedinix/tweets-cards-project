@@ -14,6 +14,8 @@ import GoitLogo from 'components/GoitLogo';
 const TweetCard = ({ userData, handleClick, isFollow }) => {
   const { id, user, avatar, tweets, followers } = userData;
 
+  const showFollowers = () =>
+    isFollow ? (followers + 1).toLocaleString() : followers.toLocaleString();
   return (
     <Card>
       <ImageBlock>
@@ -30,7 +32,7 @@ const TweetCard = ({ userData, handleClick, isFollow }) => {
       <ContentWrapper>
         <CounterWrapper>
           <p>{tweets} tweets</p>
-          <p>{isFollow ? followers + 1 : followers} followers</p>
+          <p>{showFollowers()} followers</p>
         </CounterWrapper>
         <FollowButton
           // style={{ backgroundColor: isFollow && '#5CD3A8' }}
