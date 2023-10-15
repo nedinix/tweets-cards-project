@@ -78,7 +78,6 @@ const TweetCardsList = () => {
 
   return (
     <>
-      {/* {isLoading && <div>Loading...</div>} */}
       <Filter
         values={values}
         filterQuery={filterQuery}

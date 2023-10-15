@@ -6,6 +6,11 @@ export const LinkStyled = styled(Link)`
 
   position: absolute;
 
+  @media screen and (max-width: 900px) {
+    position: static;
+    margin-bottom: 12px;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;

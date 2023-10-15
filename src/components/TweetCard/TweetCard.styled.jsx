@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 export const Card = styled.li`
   position: relative;
-  width: 380px;
+  max-width: 380px;
   height: 460px;
   padding-top: 28px;
   padding-bottom: 36px;
@@ -25,8 +25,18 @@ export const Card = styled.li`
   box-shadow: -3px 7px 21px 0px #0000003b;
   box-sizing: border-box;
 
+  @media screen and (max-width: 440px) {
+    width: auto;
+    max-width: 100%;
+  }
+
   img {
     display: block;
+
+    @media screen and (max-width: 440px) {
+      max-width: 100%;
+      height: auto;
+    }
   }
 `;
 
@@ -44,7 +54,6 @@ export const FollowButton = styled.button`
   color: #373737;
   text-transform: uppercase;
 
-  /* background-color: #ebd8ff; */
   background-color: ${({ following }) =>
     following === 'true' ? '#5CD3A8' : '#ebd8ff'};
 
@@ -70,12 +79,17 @@ export const ImageBlock = styled.div`
 export const Line = styled.div`
   display: block;
   width: 380px;
+
+  @media screen and (max-width: 440px) {
+    max-width: 100%;
+  }
+
   height: 8px;
 
   position: relative;
   background-color: #ebd8ff;
-  box-shadow: 0px -1.72px 3.44px 0px #ae7be3 inset,
-    0px 3.44px 2.58px 0px #fbf8ff inset, 0px 3.44px 3.44px 0px #0000000f;
+  box-shadow: 0px -2px 3px 0px #ae7be3 inset, 0px 3px 3px 0px #fbf8ff inset,
+    0px 3px 3px 0px #0000000f;
 `;
 
 export const ContentWrapper = styled.div`
@@ -91,13 +105,15 @@ export const ImageWrapper = styled.span`
   width: 80px;
   height: 80px;
 
+  position: absolute;
+  top: -38px;
+  left: calc(50% - 40px);
   border-radius: 50%;
 
-  transform: translate(150px, -36px);
   background-color: #ebd8ff;
 
-  box-shadow: 0px 4.5px 3.5px 0px #fbf8ff inset, 0px 4.5px 4.5px 0px #0000000f,
-    0px -2.2px 4.5px 0px #ae7be3 inset;
+  box-shadow: 0px 3px 3px 0px #fbf8ff inset, 0px 4px 4px 0px #0000000f,
+    0px -2px 3px 0px #ae7be3 inset;
 
   img {
     background-color: #5736a3;

@@ -15,7 +15,7 @@ export const FilterWrapper = styled.div`
 
 export const DropdownWrapper = styled.div`
   position: relative;
-  width: 25%;
+  width: 200px;
 `;
 
 export const FilterButton = styled.button`
