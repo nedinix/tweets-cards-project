@@ -5,11 +5,9 @@ const GoBackLink = () => {
   const location = useLocation();
 
   return (
-    <LinkWrapper>
-      <LinkStyled to={'/'} state={{ from: location }}>
-        back to homepage
-      </LinkStyled>
-    </LinkWrapper>
+    <LinkStyled to={'/'} state={{ from: location }}>
+      go back home
+    </LinkStyled>
   );
 };
 export default GoBackLink;

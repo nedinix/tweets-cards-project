@@ -7,7 +7,7 @@ const Home = () => (
       This application about tweets user cards. You can get follow or unfollow
       to some users
     </p>
-    <LinkStyled to={'/tweets'}>Go to tweets page</LinkStyled>
+    <LinkStyled to={'/tweets'}>tweets page</LinkStyled>
   </div>
 );
 
