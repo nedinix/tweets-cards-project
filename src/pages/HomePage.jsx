@@ -1,4 +1,4 @@
-const { default: Home } = require('components/Home/Home');
+import Home from 'components/Home';
 
 const HomePage = () => (
   <>
