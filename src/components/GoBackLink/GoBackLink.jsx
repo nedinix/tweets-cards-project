@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { LinkStyled, LinkWrapper } from './GoBackLink.styled';
+import { LinkStyled } from './GoBackLink.styled';
 
 const GoBackLink = () => {
   const location = useLocation();
