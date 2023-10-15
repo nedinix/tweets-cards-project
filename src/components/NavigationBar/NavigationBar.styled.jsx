@@ -35,6 +35,8 @@ export const NavLinkStyled = styled(NavLink)`
 
   border-bottom: 4px solid transparent;
 
+  transition: color 100ms linear, border-color 100ms linear;
+
   &.active {
     color: #5cd3a8;
     border-bottom: 4px solid #5cd3a8;

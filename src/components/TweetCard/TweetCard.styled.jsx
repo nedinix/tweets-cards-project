@@ -61,7 +61,8 @@ export const FollowButton = styled.button`
   border-radius: 10px;
   cursor: pointer;
 
-  box-shadow: 0px 3.4px 3.44px 0px #00000040;
+  transition: background-color 100ms linear, outline 100ms linear;
+  box-shadow: 0px 3px 3px 0px #00000040;
 
   &:hover {
     background-color: #e6e6e6;

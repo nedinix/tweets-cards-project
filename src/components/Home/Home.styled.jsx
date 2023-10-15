@@ -25,6 +25,9 @@ export const LinkStyled = styled(Link)`
   border: 1px solid transparent;
   border-radius: 8px;
 
+  transition: background-color 100ms linear, color 100ms linear,
+    opacity 100ms linear, border-color 100ms linear;
+
   &:hover {
     opacity: 1;
     color: #fff;

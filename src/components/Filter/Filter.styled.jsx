@@ -37,6 +37,8 @@ export const FilterButton = styled.button`
   border-radius: 10px;
   cursor: pointer;
 
+  transition: background-color 100ms linear;
+
   &:hover {
     background-color: #ebd8ff;
   }
@@ -60,7 +62,7 @@ export const FilterTitle = styled.div`
 export const DropdownMenu = styled.div`
   width: 100%;
   position: absolute;
-  top: 64px;
+  top: 48px;
   left: 0;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -72,7 +74,7 @@ export const DropdownMenu = styled.div`
   background-color: #e6e6e6;
 
   border-radius: 10px;
-  box-shadow: 0px 3.4px 3.44px 0px #00000040;
+  box-shadow: 0px 3px 3px 0px #00000040;
   z-index: 2;
 `;
 
@@ -92,6 +94,8 @@ export const MenuItem = styled.button`
   border-style: none;
 
   cursor: pointer;
+
+  transition: background-color 100ms linear, color 100ms linear;
 
   &:hover {
     color: #e6e6e6;

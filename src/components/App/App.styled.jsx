@@ -20,7 +20,6 @@ export const Container = styled.div`
   margin-right: auto;
 
   font-family: 'Montserrat', sans-serif;
-  /* font-size: 40px; */
   color: #010101;
 
   box-sizing: border-box;

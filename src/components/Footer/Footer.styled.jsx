@@ -2,7 +2,6 @@ import { styled } from 'styled-components';
 
 export const FooterStyled = styled.footer`
   padding: 0;
-  /* margin: 0; */
   margin-top: auto;
   padding-top: 36px;
   padding-bottom: 12px;
