@@ -7,6 +7,7 @@ import {
   FilterWrapper,
   MenuItem,
 } from './Filter.styled';
+import { VscChevronDown, VscChevronUp } from 'react-icons/vsc';
 
 const Filter = ({ values, filterQuery, setFilterQuery }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,6 +49,8 @@ const Filter = ({ values, filterQuery, setFilterQuery }) => {
       <DropdownWrapper>
         <FilterButton type="button" ref={selectRef}>
           <span>{filterQuery ? filterQuery : 'Select'}</span>
+
+          {isOpen ? <VscChevronUp width={18} /> : <VscChevronDown width={18} />}
         </FilterButton>
         {isOpen && values && (
           <DropdownMenu ref={dropdownMenuRef}>

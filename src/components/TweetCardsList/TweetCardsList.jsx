@@ -16,7 +16,7 @@ const TweetCardsList = () => {
   const values = ['All', 'Follow', 'Following'];
   const [filterQuery, setFilterQuery] = useState(values[0]);
 
-  const [isShowLoadmoreButton, setIsShowLoadmoreButton] = useState(true);
+  const [isShowLoadmoreButton, setIsShowLoadmoreButton] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
   const { usersList, isLoading, error } = useFetchUsersList(

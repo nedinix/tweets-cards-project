@@ -1,9 +1,9 @@
-import GoBackLink from 'components/GoBackLink/GoBackLink';
+import GoHomeLink from 'components/GoHomeLink/GoHomeLink';
 import TweetCardsList from 'components/TweetCardsList/TweetCardsList';
 
 const TweetsPage = () => (
   <>
-    <GoBackLink />
+    <GoHomeLink />
     <TweetCardsList />
   </>
 );
