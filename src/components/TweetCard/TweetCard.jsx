@@ -37,7 +37,6 @@ const TweetCard = ({ userData, handleClick, isFollow }) => {
           <p>{showFollowers()} followers</p>
         </CounterWrapper>
         <FollowButton
-          // style={{ backgroundColor: isFollow && '#5CD3A8' }}
           type="button"
           following={isFollow.toString()}
           onClick={() => handleClick(id)}
