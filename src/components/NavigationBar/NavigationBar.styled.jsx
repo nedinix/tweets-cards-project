@@ -2,7 +2,13 @@ import { NavLink } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 export const NavBar = styled.div`
-  background-color: #fff;
+  background-image: linear-gradient(
+    114.99deg,
+    #471ca9 -0.99%,
+    #5736a3 54.28%,
+    #4b2a99 78.99%
+  );
+
   box-shadow: 0px 3px 3px 0px #00000040;
 
   nav {
@@ -29,7 +35,7 @@ export const NavLinkStyled = styled(NavLink)`
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
-  color: #373737;
+  color: #ebd8ff;
   text-transform: uppercase;
   text-decoration: none;
 
