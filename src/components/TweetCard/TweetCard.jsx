@@ -15,7 +15,9 @@ const TweetCard = ({ userData, handleClick, isFollow }) => {
   const { id, user, avatar, tweets, followers } = userData;
 
   const showFollowers = () =>
-    isFollow ? (followers + 1).toLocaleString() : followers.toLocaleString();
+    isFollow
+      ? (followers + 1).toLocaleString('en-US')
+      : followers.toLocaleString('en-US');
   return (
     <Card>
       <ImageBlock>
