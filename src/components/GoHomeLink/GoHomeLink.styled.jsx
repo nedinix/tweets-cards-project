@@ -41,4 +41,8 @@ export const LinkStyled = styled(Link)`
     background-color: #5cd3a8;
     border-color: transparent;
   }
+
+  span {
+    margin-left: 4px;
+  }
 `;

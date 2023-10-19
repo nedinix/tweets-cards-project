@@ -1,4 +1,4 @@
-import { Container } from 'components/App/App.styled';
+import { Container } from './Layout.styled';
 import Footer from 'components/Footer';
 import Loader from 'components/Loader';
 import NavigationBar from 'components/NavigationBar';

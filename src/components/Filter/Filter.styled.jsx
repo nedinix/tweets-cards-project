@@ -25,6 +25,10 @@ export const FilterButton = styled.button`
   padding-left: 12px;
   padding-right: 12px;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 18px;
@@ -69,6 +73,7 @@ export const DropdownMenu = styled.div`
 
   display: flex;
   flex-direction: column;
+
   overflow: hidden;
 
   background-color: #e6e6e6;
@@ -79,6 +84,7 @@ export const DropdownMenu = styled.div`
 `;
 
 export const MenuItem = styled.button`
+  width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 10px;
@@ -89,6 +95,7 @@ export const MenuItem = styled.button`
   font-size: 18px;
   color: #373737;
   text-transform: uppercase;
+  text-align: left;
 
   background-color: transparent;
   border-style: none;
