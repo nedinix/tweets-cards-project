@@ -5,18 +5,16 @@ import NavigationBar from 'components/NavigationBar';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
-const Layout = () => {
-  return (
-    <>
-      <NavigationBar />
-      <Container>
-        <Suspense fallback={<Loader />}>
-          <Outlet />
-        </Suspense>
-        <Footer />
-      </Container>
-    </>
-  );
-};
+const Layout = () => (
+  <>
+    <NavigationBar />
+    <Container>
+      <Suspense fallback={<Loader />}>
+        <Outlet />
+      </Suspense>
+      <Footer />
+    </Container>
+  </>
+);
 
 export default Layout;
